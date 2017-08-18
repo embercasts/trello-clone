@@ -1,0 +1,15 @@
+<form onsubmit={{action "save"}}>
+  <p>
+    <label>List</label>
+    {{input type="text" class="form-control" value=list}}
+  </p>
+  <p>
+    <label>Title</label>
+    {{input type="text" class="form-control" value=title}}
+  </p>
+
+  <div class="button-group">
+    {{#link-to "cards" class="btn btn-back"}}Close{{/link-to}}
+    <button class="btn btn-save" type="submit">Save</button>
+  </div>
+</form>

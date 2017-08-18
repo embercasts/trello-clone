@@ -1,0 +1,19 @@
+<div class="board">
+  {{#each-in (group-by "list" model) as |list cards|}}
+    {{#draggable-object-target tagName="ul" class="list" action=(action "updateCard" list)}}
+      <li class="list-header">{{list}}</li>
+
+      {{#each cards as |card|}}
+        {{#draggable-object class="card" tagName="li" content=card}}
+          {{#link-to "cards.detail" card.id}}{{card.title}}{{/link-to}}
+        {{/draggable-object}}
+      {{/each}}
+
+      {{new-card-form class="list-footer" list=list onsubmit=(action "saveCard")}}
+    {{/draggable-object-target}}
+  {{/each-in}}
+
+  {{new-list-form class="list-form" onsubmit=(action "saveCard")}}
+</div>
+
+{{outlet}}

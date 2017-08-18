@@ -1,0 +1,239 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+/*
+  colors
+
+  #303945 (top bar)
+  #b1dade (page background)
+  #e7f3f4 (column bg)
+  #ddeff0 (column bottom: add new card bottom bg)
+  #4a6064 (placeholder copy)
+  #67b746 (success)
+*/
+
+html {
+  font-family: sans-serif;
+  background: #b1dade;
+  color: #4a6064;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1 {
+  margin: 0;
+  background: #303945;
+  color: #fff;
+  font-weight: 400;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.board {
+  flex-grow: 1;
+  width: 100%;
+  padding: 1rem;
+  overflow: scroll;
+  display: flex;
+  align-items: flex-start;
+}
+
+.list {
+  margin: 0;
+  min-width: 14rem;
+  flex-basis: calc(100% / 6 - 1rem);
+  padding: 0;
+  list-style: none;
+  margin: 0.5rem;
+  background: #e7f3f4;
+  color: #4a6064;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.list-form {
+  margin: 0;
+  min-width: 14rem;
+  flex-basis: calc(100% / 6 - 1rem);
+  padding: 0;
+  list-style: none;
+  margin: 0.5rem;
+  background: #e7f3f4;
+  color: #4a6064;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.list-form form {
+  padding: 0.5rem;
+}
+
+.list-form form > * + * {
+  margin-top: 0.5rem;
+}
+
+.list-form h2,
+.list-header {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0.5rem;
+  padding-bottom: 0;
+}
+
+.list-footer {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  overflow: auto;
+  background: #ddeff0;
+  color: #4a6064;
+}
+
+.card {
+  margin: 0.5rem;
+  margin-bottom: 0;
+  background: #fff;
+  color: #4a6064;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.card:first-of-type {
+  margin: 0;
+}
+
+.card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+label + .form-control {
+  margin-top: 0.5rem;
+}
+
+.form-control {
+  font: inherit;
+  display: block;
+  border-radius: 0.2rem;
+  width: 100%;
+  border: #e8e8e8 solid 1px;
+  background: #f8f8f8;
+  padding: 0.5rem;
+  color: #4a6064;
+}
+
+.btn {
+  font: inherit;
+  display: block;
+  border-radius: 0.2rem;
+  border: 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: none;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+.btn-hidden {
+  display: none;
+}
+
+.btn-save {
+  background: #72bf50;
+  color: #fff;
+}
+
+.btn-delete,
+.btn-text {
+  width: auto;
+  background: none;
+  padding: 0;
+  color: #4a6064;
+}
+
+.btn-back {
+  background: #bebebe;
+  color: #fff;
+}
+
+.button-group {
+  display: flex;
+}
+
+.button-group > * + * {
+  margin-left: 0.5rem;
+}
+
+.button-group .btn {
+  width: auto;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-card {
+  border-radius: 0.2rem;
+  overflow: hidden;
+  background: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 40rem;
+}
+
+.modal-card h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0.5rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.modal-card-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #f1f1f1;
+  margin: -1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
