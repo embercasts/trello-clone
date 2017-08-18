@@ -1,50 +1,27 @@
-# kanban
+# Embercasts Trello Clone
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This Ember application is the finished code for the "Build a Trello Clone in 20mins" video from the [Embercasts.com 2.0 Preview](https://www.embercasts.com).
+The code will be updated to match the latest LTS as new versions come along.
 
-## Prerequisites
+If you would like to learn how to build this application from scratch, signup on [Embercasts.com](https://www.embercasts.com) and watch the video tutorial for free.
+
+## Running this application locally
+
+### Prerequisites
 
 You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
 
-## Installation
+### Installation
 
-* `git clone <repository-url>` this repository
-* `cd kanban`
-* `npm install`
+* `git clone https://github.com/embercasts/trello-clone.git` this repository
+* `cd trello-clone`
+* `npm install` or `yarn install`
 
-## Running / Development
+### Running / Development
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
